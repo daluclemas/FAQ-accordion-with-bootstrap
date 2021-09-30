@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    /* Text primary*/
+
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+
+    /* Gradient */
+
+    /* Background gradient */
+
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+
+    /* ### Neutral text*/
+
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+
+    /* #### Dividers */
+
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+
+}
+
+body{
+
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    color: var(--Very-dark-desaturated-blue);
+    background-image: linear-gradient(100deg, var(--Soft-blue), var(--Soft-violet));
+
+}
+
+.container-sm{
+
+    border: 1px hidden red;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin-top:110px;
+    border-radius: 10px;
+    box-shadow: 4px 5px 6px var(--Dark-grayish-blue);
+
+}
+
+.box-img{
+    display: none;
+}
+
+.desktop-img{
+    display: none;
+}
+
+.mobile-img{
+
+    filter: drop-shadow(0px 30px 2px var(--Light-grayish-blue) );
+    margin-top: -105px;
+}
+
+.accordion-div{
+    border: 1px hidden red;
+    margin-top: 50px;
+    margin-bottom:20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.faq-text{
+
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    width: 100%;
+    margin-bottom: 30px;
+    
+}
+
+.accordion-div-container{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.card{
+    width: 90%;
+    border: none;
+    margin: auto;
+    border-bottom: 1px solid var(--Light-grayish-blue);
+    border-radius: 0;
+}
+
+.card-header{
+
+    background: transparent;
+    border-bottom: none;
+    margin: 0;
+    justify-content: space-between;
+    
+}
+
+.card-body{
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 95%;
+    border: 1px hidden green;
+    margin: auto;
+    
+}
+
+.card-header p{
+
+    font-weight: 700;
+    color: var(--Very-dark-grayish-blue);
+
+}
+
+.card-header p.active{
+    color: var(--Soft-red);
+}
+
+.card-header p::first-letter{
+
+    text-transform:uppercase;
+
+}
+
+.card-body p{
+
+    color: var(--Dark-grayish-blue);
+    width: 90%;
+    margin: auto;
+    padding-bottom: 5px;
+
+}
+
+.card-body p::first-letter{
+
+    text-transform:uppercase;
+
+}
+
+.collapse{
+
+    width: 100%;
+}
+
+@media (min-width: 576px){
+
+    .container-sm{
+        border: 1px hidden green;
+        margin-top: 130px;
+    }
+
+    .img-div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mobile-img{
+        
+        margin-top:-110px;
+    }
+
+    .card-body p{
+        width: 95%;
+    }
+
+
+}
+
+@media (min-width: 768px){
+
+    .container-sm{
+        border: 1px hidden blue;
+    }
+
+    .card-body p{
+        width: 100%;
+    }
+}
+
+@media (min-width: 998px){
+
+    .container-sm{
+        border: 1px hidden black;
+        margin-top: 250px;
+    }
+
+    .mobile-img{
+        display: none
+    }
+
+    .desktop-img{
+        display: block;
+        margin-top: -210px;
+    }
+
+    .card-header p{
+        font-size: 18px;
+    }
+
+    .card-body p{
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1400px){
+
+    .container-sm{
+        border: 1px hidden yellow;
+        flex-direction: row;
+        align-items: flex-end;
+        padding: 0;
+    }
+
+    .img-div{
+
+        border: 1px hidden black;
+        width:100%;
+        height: auto;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding: 0;
+        background-image: url('/images/bg-pattern-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -130px center;
+        margin-top: 0;
+        
+    }
+
+
+    .box-img{
+        display: block;
+        margin-left:-150px;
+        margin-bottom: 45px;
+        z-index: 2;
+    }
+
+    .desktop-img{
+
+        margin-top: 0;
+        z-index: 1;
+        margin-left: -125px;
+    }
+
+    .card-header p{
+        font-size: 14px;
+    }
+
+    .card-body p{
+        
+        font-size: 14px;
+    }
+
+    .faq-text{
+        margin-top: 20px;
+    }
+
+    .accordion-div{
+        padding-bottom: 0;
+        margin: 0;
+    }
+}
+

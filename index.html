@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ ACCORDION</title>
+
+    <link rel="shortcut icon" href="images/favicon-32x32.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styless/bootstrap.min.css">
+
+    <link rel="stylesheet" href="styless/style.css">
+
+    <script src="js/jquery.js" defer></script>
+    <script src="js/popper.min.js" defer></script>
+    <script src="js/bootstrap.min.js" defer></script>
+    <script src="js/app.js" defer></script>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="container-sm">
+
+            <div class="img-div">
+
+                <img src="images/illustration-box-desktop.svg" alt="box-image" class="box-img">
+
+                <img src="images/illustration-woman-online-desktop.svg" alt="desktop-image" class="desktop-img">
+
+                <img src="images/illustration-woman-online-mobile.svg" alt="mobile-img" class="mobile-img">
+
+                
+
+            </div>
+
+            <!-- accordion-div -->
+
+            <div class="accordion-div">
+
+                <h1 class="faq-text">faq</h1>
+
+                <div class="accordion-div-container" id="accordion">
+
+                    <!-- card 1 -->
+                    <div class="card">
+
+                        <div class="accordion-header-text card-header d-flex">
+
+                            <p class="paragraph">how many team members can i invite ?</p>
+
+                            <a href="#collapseone" class="card-link" data-toggle="collapse">
+
+                                <img src="images/icon-arrow-down.svg" alt="arrow-down" class="arrow-img">
+
+                            </a>
+
+                        </div>
+
+                        <div class="collapse" id="collapseone" data-parent="#accordion">
+
+                            <div class="card-body">
+                                <p class="card-body-content">
+                                    you can invite as many people as possible.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- cqrd-2 -->
+                    <div class="card">
+
+                        <div class="card-header d-flex">
+
+                            <p class="card-header-text">what is the maximum file upload size ?</p>
+
+                            <a href="#collapsetwo" class="card-link" data-toggle="collapse">
+
+                                <img src="images/icon-arrow-down.svg" alt="arrow-down" class="arrow-img">
+
+                            </a>
+
+                        </div>
+
+                        <div class="collapse" id="collapsetwo" data-parent="#accordion">
+
+                            <div class="card-body">
+
+                                <p class="paragraph">
+                                    no more than <span class="text-uppercase">2gb</span>. <span class="text-capitalize">all</span> files in your account must fit your alloted storage space.
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- card 3 -->
+                    <div class="card">
+
+                        <div class="card-header d-flex">
+
+                            <p class="card-header-paragraph">
+                                how do i reset my password ?
+                            </p>
+
+                            <a href="#collapsethree" class="card-link" data-toggle="collapse">
+
+                                <img src="images/icon-arrow-down.svg" alt="arrow-down" class="arrow-img">
+
+                            </a>
+
+                        </div>
+
+                        <div class="collapse" id="collapsethree" data-parent="#accordion">
+
+                            <div class="card-body">
+                                <p class="card-body-text">
+                                    you can reset your password by either contacting a customer care representative or sending an email to us.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- card4 -->
+                    <div class="card">
+
+                        <div class="card-header d-flex">
+                            <p>can i cancel my subscription ?</p>
+
+                            <a href="#collapsefour" class="card-link" data-toggle="collapse">
+
+                                <img src="images/icon-arrow-down.svg" alt="arrow-down" class="arrow-img">
+                            </a>
+                        </div>
+
+                        <div class="collapse" id="collapsefour" data-parent="#accordion">
+
+                            <div class="card-body">
+                                <p>yes, you absolutely can</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card5 -->
+                    <div class="card">
+
+                        <div class="card-header d-flex">
+
+                            <p>do you provide additional support ?</p>
+
+                            <a href="#collapsefive" class="card-link" data-toggle="collapse">
+
+                                <img src="images/icon-arrow-down.svg" alt="arrow-down" class="arrow-img">
+
+                            </a>
+
+                        </div>
+
+                        <div class="collapse" id="collapsefive" data-parent="#accordion">
+
+                            <div class="card-body">
+                                <p>yes, we absolutely do.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            
+
+        </div>
+
+
+
+    </div>
+    
+</body>
+</html>
